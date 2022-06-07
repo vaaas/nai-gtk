@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+	 	"lib": [
+			"ESNext",
+		],
+		"module": "esnext",
+		"strict": true,
+		"outDir": "dist"
+	}
+}
