@@ -1,7 +1,5 @@
 import { Gtk } from './Gtk.js'
 
-export {}
-
 declare global {
 	const imports: {
 		gi: {
@@ -11,5 +9,9 @@ declare global {
 
 			Gtk: Gtk,
 		},
+	}
+
+	const console: {
+		log: (...xs: any[]) => void,
 	}
 }

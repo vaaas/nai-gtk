@@ -2,7 +2,7 @@ export type ApplicationEvent = 'activate'
 
 declare class Application {
 	constructor(x: { application_id: string })
-	connect(event: ApplicationEvent, callback: () => void): void
+	connect(event: ApplicationEvent, callback: (x: Application) => void): void
 	run(args: Array<string>): void
 }
 
@@ -20,8 +20,16 @@ declare class Button extends Widget {
 	connect: (event: 'clicked', callback: () => void) => void
 }
 
-export interface Gtk {
+interface Gtk {
 	Application: typeof Application,
 	ApplicationWindow: typeof ApplicationWindow,
 	Button: typeof Button,
+}
+
+export {
+	Application,
+	ApplicationWindow,
+	Widget,
+	Button,
+	Gtk,
 }
