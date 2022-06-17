@@ -1,6 +1,6 @@
 imports.gi.versions['Gtk'] = '4.0'
 const Gtk = imports.gi.Gtk
-type Application = import('./external/Gtk.js').Application
+type Application = import('gtk-ts').Application
 
 function on_activate(app: Application) {
 	const win = new Gtk.ApplicationWindow({ application: app })

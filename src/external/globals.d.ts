@@ -1,4 +1,4 @@
-import { Gtk } from './Gtk.js'
+import { Gtk } from 'gtk-ts'
 
 declare global {
 	const imports: {

@@ -1,0 +1,9 @@
+{
+	"workspaces": [
+		"packages/gtk-ts"
+	],
+	"dependencies": {
+		"gtk-ts": "workspace:*"
+	},
+	"type": "module"
+}
